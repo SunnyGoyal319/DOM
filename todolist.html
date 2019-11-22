@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>TO DO LIST</title>
+        <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+        <div class="container" align="center">
+                <div id="banner-container" style="width:400px;height:400px;"></div>
+                <script>
+                var d = new Date();
+                var n = d.getDay();
+                
+                if (n==1)
+                {
+                    document.getElementById("banner-container").style.backgroundImage = "url('monday.jpg')";
+                }
+                else if (n==2)
+                {
+                    document.getElementById("banner-container").style.backgroundImage="url('tuesday.jpg')";
+                }
+                else if (n==3)
+                {
+                    document.getElementById("banner-container").style.backgroundImage = "url('wednesday.jpg')";
+                }
+                else if (n==4)
+                {
+                    document.getElementById("banner-container").style.backgroundImage = "url('thrusday.jpg')";
+                }
+                else if(n==5)
+                {
+                    document.getElementById("banner-container").style.backgroundImage = "url('friday.jpg')";
+                }
+                else if(n==6)
+                {
+                    document.getElementById("banner-container").style.backgroundImage = "url('saturday.jpg')";
+                }
+                else if(n==0)
+                {
+                    document.getElementById("banner-container").style.backgroundImage = "url('sunday.jpg')";
+                }
+                </script>
+        <div class=to-do>
+            <p></p>
+            <p></p>
+            <h1>Todays tasks</h1>
+        <input type='text' id='input'>
+        <button id='addbtn'>+</button>
+        <div id='div'>
+
+        </div>
+        </div>
+        </div>
+    </body>
+    <script src='scripttable.js'></script>
+</html>
